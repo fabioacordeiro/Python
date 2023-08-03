@@ -1,0 +1,10 @@
+#Faça um programa que leia a digitacao e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ela:
+a = input('Digite algo :')
+print('O tipo primitivo desse valor é {}'.format(type(a)))
+print('Só tem espaços ?', a.isspace())
+print('É um número ?',a.isnumeric())
+print('É alfabético ?',a.isalpha())
+print('É alfanumérico ?',a.isalnum())
+print('Esta escrito tudo em Maiúsculo ?',a.isupper())
+print('Esta escrito tudo em Minúsculo ?',a.islower())
+print('Esta capitalizada ? Termo utilizado para frases ou palavras escrito em Maiúsculas ou Minúsculas',a.istitle())
