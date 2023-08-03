@@ -60,5 +60,7 @@ def dobra(list):
 
 valores = [110, 15, 20, 34, 63]
 dobra(valores)
-print(valores)
+valores1 = valores
+print(valores1)
+
 
