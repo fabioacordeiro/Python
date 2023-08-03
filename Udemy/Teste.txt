@@ -1,0 +1,7 @@
+Olá mundo !!!Atenção !!!Interação com a escrita dentro do arquivo 
+    Seguindo na escrita da segunda linha 
+        Amo minha família !!!! 
+Hoje é 06/03/2023 11:14 
+Tupla 1 
+Tupla 2 
+Tupla 3 

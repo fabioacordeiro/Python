@@ -1,0 +1,16 @@
+class MyContextManager1:
+    def __init__(self, caminho_do_arquivo, modo)
+        self.caminho_do_arquivo = caminho_do_arquivo
+        self.modo = modo
+        self._arquivo = None
+
+    def __enter__(self)
+        print("Abrindo Arquivo")
+        self._arquivo = open(self.caminho_do_arquivo, self.modo, encoding="utf8")
+        return self._arquivo
+
+    def __exit__(self, class_expetion, excepetion_, traceback):
+        print("Fechando o Arquivo")
+
+
+
