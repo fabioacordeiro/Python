@@ -6,7 +6,7 @@ from random import choice
 lista = []
 valores = []
 digitado = n1 = n2 = n3 = n4 = n5 = n6 = v = cont = 0
-digitado = int(input('\033[7;30;46m Qual a quantidade de palpites a serem gerados ? :'))
+digitado = int(input('Qual a quantidade de palpites a serem gerados ? :'))
 print('='*50)
 while v != digitado:
     v = v + 1
@@ -27,12 +27,14 @@ while v != digitado:
         lista.append(n4)
         lista.append(n5)
         lista.append(n6)
+        lista.sort()
         valores.append(lista[:])
         lista.clear()
     else:
         v = v - 1
 print(f'{"Palpites de sugestão":^50}')
 print('='*50)
+valores.sort()
 for v in valores:
     cont = cont + 1
     print(f'Jogo {cont}: {v}')

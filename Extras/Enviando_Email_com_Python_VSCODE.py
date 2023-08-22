@@ -19,8 +19,8 @@ from email import encoders
 vhost = "smtp.gmail.com"
 porta = "587"
 #porta = 465
-login = "novosprojetos@gmail.com"
-senha = "Fac@16705501847"
+login = "SeuEmail"
+senha = "sua senha"
 
 #server = smtplib.SMTP(port=porta, host=vhost)
 server = smtplib.SMTP(vhost, porta)
