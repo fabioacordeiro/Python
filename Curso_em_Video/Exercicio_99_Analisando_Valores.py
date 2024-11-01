@@ -2,7 +2,8 @@
 from time import sleep
 
 def maior(* núm):
-    cont = maior = 0
+    cont = 0
+    maior2 = 0
     print(f'='*50)
     print(' Analisando os valores...')
     for valor in núm:

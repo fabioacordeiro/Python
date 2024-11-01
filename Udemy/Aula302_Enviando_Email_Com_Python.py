@@ -6,9 +6,19 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from string import Template
 
+path='C:\Fabio\Desenvolvimento\Python\Udemy\.env'
+
 from dotenv import load_dotenv  # type: ignore
 
-load_dotenv()
+#load_dotenv('C:/Fabio/Desenvolvimento/Python/Udemy/.env')
+load_dotenv(dotenv_path=path,verbose=True)
+
+test_var = os.getenv("TEST_VAR")
+
+print(test_var)
+
+#load_dotenv(dotenv_path=path,verbose=True)
+
 
 # Caminho arquivo HTML
 CAMINHO_HTML = pathlib.Path(__file__).parent / 'aula185.html'

@@ -51,6 +51,15 @@ O segundo dígito do CPF é 0
 """
 import random
 
+import time
+#Pegando o tempo de execução do código
+tempo_inicial = time.time()
+seconds = 0
+hour = 0
+minutes = 0
+
+print("--- %s segundos ---" % (time.time() - tempo_inicial))
+
 nomeprograma = 'Gerador de CPF'
 print(50*'_')
 print(f'{nomeprograma:^50}')
@@ -140,4 +149,9 @@ for _ in range(100):
 print('\033[0;30mFim Validação')
 print('\033[0;30m')
 
-
+seconds = (time.time() - tempo_inicial)
+hour = seconds // 3600
+minutes = seconds // 60
+seconds %= 60
+print("--- %s segundos ---" % (time.time() - tempo_inicial))
+print("--- %s segundos ---" % ("%d:%02d:%02d" % (hour, minutes, seconds) ))

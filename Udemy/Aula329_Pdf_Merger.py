@@ -8,13 +8,13 @@ from PyPDF2 import PdfReader, PdfWriter
 from pathlib import Path
 
 
-@ @ -9, 7 + 9, 7 @ @
-# pip install pypdf2
+#@ @ -9, 7 + 9, 7 @ @
+pip install pypdf2
 PASTA_RAIZ = Path(__file__).parent
 PASTA_ORIGINAIS = PASTA_RAIZ / 'pdfs_originais'
 
 
-@ @ -39, 3 + 39, 17 @ @
+#@ @ -39, 3 + 39, 17 @ @
 with open(PASTA_NOVA / f'page{i}.pdf', 'wb') as arquivo:
     writer.add_page(page)
     writer.write(arquivo)  # type: ignore
